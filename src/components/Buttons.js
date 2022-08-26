@@ -39,18 +39,27 @@ const Buttons = ({ number, setNumber, oldNumber, setOldNumber, operator, setOper
     const operatorValue = e.target.value;
     setOperator(operatorValue);
     setOldNumber(number);
-    setNumber("");
+    setNumber(0);
   }
 
   const calculate = () => {
+    let result;
+
     if (operator === "÷") {
-      setNumber(parseFloat(oldNumber) / parseFloat(number));
+      result = parseFloat(oldNumber) / parseFloat(number);
+      setNumber(+parseFloat(result).toFixed(10));
+
     } else if (operator === "×") {
-      setNumber(parseFloat(oldNumber) * parseFloat(number));
+      result = parseFloat(oldNumber) * parseFloat(number);
+      setNumber(+parseFloat(result).toFixed(10));
+
     } else if (operator === "+") {
-      setNumber(parseFloat(oldNumber) + parseFloat(number));
+      result = parseFloat(oldNumber) + parseFloat(number);
+      setNumber(+parseFloat(result).toFixed(10));
+
     } else if (operator === "-") {
-      setNumber(parseFloat(oldNumber) - parseFloat(number));
+      result = parseFloat(oldNumber) - parseFloat(number)
+      setNumber(+parseFloat(result).toFixed(10));
     }
   }
 

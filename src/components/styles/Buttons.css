@@ -12,6 +12,7 @@
 .buttons button {
     background-color: #ececec;
     color: #464646;
+    outline: none;
     cursor: pointer;
     border: none;
     font-size: 24px;
