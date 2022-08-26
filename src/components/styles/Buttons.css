@@ -1,0 +1,31 @@
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(5, 100px);
+    gap: 2px;
+}
+
+.w-2 {
+    grid-column: span 2;
+}
+
+.buttons button {
+    background-color: #ececec;
+    color: #464646;
+    cursor: pointer;
+    border: none;
+    font-size: 24px;
+    transition: all 0.2s ease-in-out;
+}
+
+.buttons button:hover {
+    background-color: #e4e4e4;
+}
+
+.buttons .orange {
+    background-color: #ffdbc3;
+}
+
+.buttons .orange:hover {
+    background-color: #fdceaf;
+}
