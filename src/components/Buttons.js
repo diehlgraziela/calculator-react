@@ -5,7 +5,7 @@ const Buttons = ({ number, setNumber }) => {
 
   const handleNumber = (e) => {
     let value = e.target.value;
-    setNumber(value);
+    setNumber(number + value);
     console.log(value);
   };
 

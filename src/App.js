@@ -10,7 +10,7 @@ function App() {
 
   return (
     <div className='App'>
-      <Screen />
+      <Screen number={number} />
 
       <Buttons number={number} setNumber={setNumber} />
     </div>
