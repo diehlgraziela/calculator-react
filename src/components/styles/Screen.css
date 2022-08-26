@@ -2,8 +2,10 @@
     background-color: #fdb07d;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     padding: 1rem;
     margin-bottom: 2px;
+    height: 12vh;
 }
 
 .screen span {
